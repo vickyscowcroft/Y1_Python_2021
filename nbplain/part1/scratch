@@ -1,0 +1,18 @@
+fibonacci = array.array('i',(0 for i in range(0,20)))
+for n in range(20):
+    if n < 2:
+        fibonacci[n] = 1
+    else:
+        fibonacci[n] = fibonacci[n-2] + fibonacci[n-1]
+    print(fibonacci[n])
+    
+    import array
+    
+    # Exercise: Yahtzee
+
+During lockdown I have spent an unfortunate amount of time playing Yahtzee on my phone. Each turn consists of up to 3 rolls of 5 dice, with the top score awarded for all five dice having the same value (e.g. five 1's or five 2's etc.) In this exercise we'll just consider one roll of the 5 dice. 
+
+Write a function that takes `n_rolls` as input and uses the `np.random.uniform` function to generate an array of 5 random numbers between 1 and 6 for each roll. How many times do all 5 dice have the same value when `n_rolls = 10`? Run your function for 100 and 1000 rolls. What proportion of the rolls have all 5 dice with the same value? How does this compare with your expectations? Write an explanation (including maths) for what you expect and how it compares to the results from your function. 
+
+
+
